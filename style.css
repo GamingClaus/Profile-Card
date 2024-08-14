@@ -23,28 +23,27 @@ body::before,
 body::after{
     content: '';
     position: absolute;
-    width:120vw;
-    height:120vw;
-    max-width: 200vh;
-    max-height: 200vh;
+    width:100vw;
+    height:100vw;
     z-index: -1;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 body::before{
     background:url(images/bg-pattern-top.svg);
     background-position: top left;
     background-repeat: no-repeat;
-    top: -500px;
-    left: -350px;
+    top: -40vw;
+    left: -30vw;
 }
 
 body::after{
     background:url(images/bg-pattern-bottom.svg);
     background-position: bottom right;
     background-repeat: no-repeat;
-    right: -280px;
-    bottom: -600px;
+    right: -20vw;
+    bottom: -50vw;
     
 }
 
@@ -125,41 +124,38 @@ body::after{
 body{
     position: relative;
     margin: 0;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden; 
 }
 
 body::before,
 body::after {
+    width: 150vw;
+    height: 150vw;
     content: "";
     position: absolute;
     z-index: -1; /* Place behind content */
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: cover; /* Adjust as needed */
 }
 body::before{
 
-    background:url(images/bg-pattern-top.svg);
-    background-position: top left;
-    background-repeat: no-repeat;
-    top: -540px;
-    left: -750px;
-    width:120vw;
-    height:120vw;
-    max-width: 200vh;
-    max-height: 200vh;
+    top: -80vw;
+    left: -85vw;
+    overflow: hidden;
+
     
 }
 
 body::after{
-    background:url(images/bg-pattern-bottom.svg);
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    right: -750px;
-    bottom: -550px;
-    width:120vw;
-    height:120vw;
-    max-width: 200vh;
-    max-height: 200vh;
-    
+ 
+    right: -95vw;
+    bottom: -65vw;
+    overflow: hidden;
+
 }
+
 }
