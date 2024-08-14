@@ -8,40 +8,19 @@
     padding: 0;
 }
 
-body{
-    background-color:  hsl(185, 75%, 39%);
-    overflow: hidden;
+body {
     height: 100vh;
+    width: 100%;
+    background-image: url("https://gamingclaus.github.io/Profile-Card/images/bg-pattern-top.svg"), url(https://gamingclaus.github.io/Profile-Card/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: left -100px top -300px, right -95px bottom -310px;
+    background-size: clamp(500px, 60vw, 700px);
+    background-color:  hsl(185, 75%, 39%);
+    font-family: "Kumbh Sans", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Kumbh Sans", sans-serif;
-}
 
-body::before,
-body::after{
-    position: fixed;
-    content: '';
-    width:100%;
-    height: 100vh;
-    background-size: contain;
-    z-index: -1;
-}
-
-body::before{
-    background:url(images/bg-pattern-top.svg);
-    background-position: -22rem -30rem;
-    background-repeat: no-repeat;
-
-
-}
-
-body::after{
-    background:url(images/bg-pattern-bottom.svg);
-    background-repeat: no-repeat;
-    background-position: 32rem 30rem;
-
-    
 }
 
 .profile-card{
@@ -118,41 +97,18 @@ body::after{
 
 @media (max-width:375px),(max-width:800px){
   
-body{
-    position: relative;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+
+    body {
+        background-image: url("https://gamingclaus.github.io/Profile-Card/images/bg-pattern-top.svg"), url(https://gamingclaus.github.io/Profile-Card/images/bg-pattern-bottom.svg);
+        background-repeat: no-repeat;
+        background-position: left -250px top -240px, right -290px bottom -170px;
+        background-size: clamp(500px, 60vw, 700px);
+        background-color:  hsl(185, 75%, 39%);
+ 
     
-}
+    }
 
 
-body::before,
-body::after{
-    position: fixed;
-    content: '';
-    width:100%;
-    height: 100vh;
-    background-size: contain;
-    z-index: -1;
-}
-
-body::before{
-    background:url(images/bg-pattern-top.svg);
-    background-position: -46rem -37rem;
-    background-repeat: no-repeat;
-
-
-}
-
-body::after{
-    background-repeat: no-repeat;
-    background-position: 11rem 32rem;
-
-    
-}
 
 
 
