@@ -142,7 +142,6 @@ body::after {
     background-repeat: no-repeat;
 }
 body::before{
-
     top: -80vw;
     left: -85vw;
     overflow: hidden;
@@ -151,7 +150,6 @@ body::before{
 }
 
 body::after{
- 
     right: -95vw;
     bottom: -65vw;
     overflow: hidden;
